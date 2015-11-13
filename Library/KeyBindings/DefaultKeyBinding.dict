@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>$</key>
+	<string>moveToBeginningOfLineAndModifySelection:</string>
+	<key>$</key>
+	<string>moveToEndOfLineAndModifySelection:</string>
+	<key>$</key>
+	<string>pageUpAndModifySelection:</string>
+	<key>$</key>
+	<string>pageDownAndModifySelection:</string>
+	<key>@$</key>
+	<string>moveToBeginningOfDocumentAndModifySelection:</string>
+	<key>@$</key>
+	<string>moveToEndOfDocumentAndModifySelection:</string>
+	<key>@</key>
+	<string>moveToBeginningOfDocument:</string>
+	<key>@</key>
+	<string>moveToEndOfDocument:</string>
+	<key></key>
+	<string>moveToBeginningOfLine:</string>
+	<key></key>
+	<string>moveToEndOfLine:</string>
+	<key></key>
+	<string>pageUp:</string>
+	<key></key>
+	<string>pageDown:</string>
+</dict>
+</plist>
