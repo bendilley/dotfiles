@@ -1,11 +1,12 @@
 ```bash
 cd ~
-ln -s ~/workspace/dotfiles/.bashrc
-ln -s ~/workspace/dotfiles/.bash_profile
+ln -s workspace/dotfiles/.bashrc
+ln -s workspace/dotfiles/.bash_profile
+ln -s workspace/dotfiles/.bash_aliases
 # and put any system-specific settings in ~/.profile
 
 cd ~/Library
-ln -s ~/workspace/dotfiles/Library/KeyBindings
+ln -s ../workspace/dotfiles/Library/KeyBindings
 ```
 
 To fix Home and End keys in terminal:
