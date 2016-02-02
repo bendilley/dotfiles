@@ -5,6 +5,9 @@ ln -s workspace/dotfiles/.bash_profile
 ln -s workspace/dotfiles/.bash_aliases
 # and put any system-specific settings in ~/.profile
 
+ln -s workspace/dotfiles/.vim
+ln -s workspace/dotfiles/.vimrc
+
 cd ~/Library
 ln -s ../workspace/dotfiles/Library/KeyBindings
 ```
