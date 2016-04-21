@@ -11,6 +11,11 @@ ln -s workspace/dotfiles/.psqlrc
 ln -s workspace/dotfiles/.abcde.conf
 ln -s workspace/dotfiles/.flac2mp3.conf
 
+ln -s workspace/dotfiles/.gitconfig-includes
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git config --global include.path ~/.gitconfig-includes
+
 cd ~/bin
 ln -s ../workspace/dotfiles/bin/flac2mp3
 ln -s ../workspace/dotfiles/bin/flac2mp3-rips-conversions

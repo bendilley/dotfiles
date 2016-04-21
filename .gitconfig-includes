@@ -1,0 +1,48 @@
+[alias]
+  co = checkout
+  cp = cherry-pick -x
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  pp = pull --prune
+  fp = fetch --prune
+  lt = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen(written %ar by %C(bold blue)%an%Cgreen, committed %ci by %C(bold blue)%cn%Cgreen)%Creset'
+  lg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)%an%Creset'
+  dt = difftool -y
+  mt = mergetool -y
+  squash = rebase -i
+  oldest-ancestor = !bash -c 'diff -u <(git rev-list --first-parent "${1:-master}") <(git rev-list --first-parent "${2:-HEAD}") | sed -ne "s/^ //p" | head -1' -
+[color]
+  ui = true
+[branch]
+  autosetuprebase = always
+[push]
+  default = upstream
+[core]
+  autocrlf = false
+  excludesfile = ~/.gitignore-global
+[difftool "kdiff3"]
+  path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
+[merge]
+  tool = diffmerge
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path =
+[mergetool "sourcetree"]
+  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+[mergetool "diffmerge"]
+  cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+  trustExitCode = true
+[difftool "diffmerge"]
+  cmd = diffmerge $LOCAL $REMOTE
+[mergetool]
+  keepBackup = false
+[mergetool "p4mergetool"]
+  cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
+[diff]
+  tool = diffmerge
+[difftool "p4mergetool"]
+  cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
