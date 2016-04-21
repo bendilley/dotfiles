@@ -7,7 +7,7 @@ ln -s workspace/dotfiles/.bash_aliases
 
 ln -s workspace/dotfiles/.vim
 ln -s workspace/dotfiles/.vimrc
-
+ln -s workspace/dotfiles/.psqlrc
 ln -s workspace/dotfiles/.abcde.conf
 ln -s workspace/dotfiles/.flac2mp3.conf
 

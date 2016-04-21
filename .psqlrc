@@ -1,0 +1,10 @@
+-- Mostly stolen from http://www.craigkerstiens.com/2013/02/21/more-out-of-psql/
+\pset linestyle ascii
+--\pset border 2
+--\pset null ¤
+--\pset format wrapped
+\timing
+\set PROMPT1 '%[%033[33;1m%]%x%[%033[0m%]%[%033[1m%]%/%[%033[0m%]%R%# '
+
+--\set AUTOCOMMIT off
+--\set PROMPT1 '%001%[%033[1;33;40m%]%002%n@%/%R%001%[%033[0m%]%002%# '
