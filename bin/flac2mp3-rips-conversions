@@ -1,1 +1,2 @@
-flac2mp3 /Users/ben/Music/Rips /Users/ben/Music/Conversions
+mkdir -p $HOME/Music/Conversions
+flac2mp3 $HOME/Music/Rips $HOME/Music/Conversions

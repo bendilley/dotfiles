@@ -8,6 +8,13 @@ ln -s workspace/dotfiles/.bash_aliases
 ln -s workspace/dotfiles/.vim
 ln -s workspace/dotfiles/.vimrc
 
+ln -s workspace/dotfiles/.abcde.conf
+ln -s workspace/dotfiles/.flac2mp3.conf
+
+cd ~/bin
+ln -s ../workspace/dotfiles/bin/flac2mp3
+ln -s ../workspace/dotfiles/bin/flac2mp3-rips-conversions
+
 cd ~/Library
 ln -s ../workspace/dotfiles/Library/KeyBindings
 ```
