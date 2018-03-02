@@ -22,6 +22,11 @@ ln -s ../workspace/dotfiles/bin/flac2mp3-rips-conversions
 
 cd ~/Library
 ln -s ../workspace/dotfiles/Library/KeyBindings
+
+# after installing VS Code
+cd "Library/Application Support/Code/User"
+ln -s "$HOME/workspace/dotfiles/Library/Application Support/Code/User/settings.json"
+ln -s "$HOME/workspace/dotfiles/Library/Application Support/Code/User/keybindings.json"
 ```
 
 To fix Home and End keys in terminal:

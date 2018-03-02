@@ -1,0 +1,19 @@
+{
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.colorTheme": "Twilight",
+    "editor.fontFamily": "Monaco",
+    "editor.tabSize": 2,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "files.insertFinalNewline": true,
+    "git.confirmSync": false,
+    "extensions.ignoreRecommendations": false,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#303030",
+        "statusBar.noFolderBackground": "#222225",
+        "statusBar.debuggingBackground": "#511f1f"
+    },
+    "workbench.statusBar.feedback.visible": false
+}
