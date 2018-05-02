@@ -7,6 +7,7 @@
         80,
         120
     ],
+    "editor.scrollBeyondLastLine": false,
     "files.insertFinalNewline": true,
     "git.confirmSync": false,
     "extensions.ignoreRecommendations": false,
@@ -15,5 +16,14 @@
         "statusBar.noFolderBackground": "#222225",
         "statusBar.debuggingBackground": "#511f1f"
     },
-    "workbench.statusBar.feedback.visible": false
+    "workbench.statusBar.feedback.visible": false,
+    "gitlens.keymap": "alternate",
+    "ruby.interpreter.commandPath": "/Users/ben/.rbenv/shims/ruby",
+    "solargraph.commandPath": "/Users/ben/.rbenv/shims/solargraph",
+    "extensions.autoUpdate": false,
+    "editor.find.seedSearchStringFromSelection": false,
+    "ruby.lint": {
+        "ruby": true,
+        "rubocop": true
+    }
 }
