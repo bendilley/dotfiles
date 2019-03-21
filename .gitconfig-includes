@@ -22,7 +22,7 @@
 [difftool "kdiff3"]
   path = /Applications/kdiff3.app/Contents/MacOS/kdiff3
 [merge]
-  tool = diffmerge
+  tool = smerge
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
   path =
@@ -39,10 +39,16 @@
 [mergetool "p4mergetool"]
   cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
 [diff]
-  tool = diffmerge
+  tool = smerge
 [difftool "p4mergetool"]
   cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
 [filter "lfs"]
   clean = git-lfs clean %f
   smudge = git-lfs smudge %f
   required = true
+[mergetool "smerge"]
+  cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+  trustExitCode = true
+[difftool "smerge"]
+  cmd = smerge mergetool --no-wait \"$LOCAL\" \"$REMOTE\"
+  trustExitCode = false
