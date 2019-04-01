@@ -46,6 +46,7 @@ defaults write org.whispersystems.signal-desktop NSRequiresAquaSystemAppearance 
 defaults write com.tinyspeck.slackmacgap NSRequiresAquaSystemAppearance 0
 defaults write com.roon.Roon NSRequiresAquaSystemAppearance 0
 defaults write com.coppertino.Vox NSRequiresAquaSystemAppearance 0
+defaults write com.google.Chrome NSRequiresAquaSystemAppearance 0
 ```
 (you can use `osascript -e 'id of app "App Name"'` to identify an app)
 
