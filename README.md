@@ -1,3 +1,8 @@
+Install [homebrew](https://brew.sh/) and
+```bash
+brew install bash-completion
+```
+
 ```bash
 cd ~
 ln -s workspace/dotfiles/.bashrc
