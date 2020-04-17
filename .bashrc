@@ -99,4 +99,4 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-function sshi() { ssh -G $1 | grep localforward && ssh $1; }
+function sshi() { ssh -G $1 | grep localforward; ssh $1; }
