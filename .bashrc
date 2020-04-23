@@ -100,3 +100,4 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 function sshi() { ssh -G $1 | grep localforward; ssh $1; }
+function deploy() { git reset --hard $1 && git push && bin/cap `git rev-parse --abbrev-ref HEAD` deploy; }
