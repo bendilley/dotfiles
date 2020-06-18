@@ -50,7 +50,6 @@ defaults write com.sublimetext.3 NSRequiresAquaSystemAppearance 0
 defaults write com.macromates.TextMate NSRequiresAquaSystemAppearance 0
 defaults write org.whispersystems.signal-desktop NSRequiresAquaSystemAppearance 0
 defaults write com.tinyspeck.slackmacgap NSRequiresAquaSystemAppearance 0
-defaults write com.roon.Roon NSRequiresAquaSystemAppearance 0
 defaults write com.coppertino.Vox NSRequiresAquaSystemAppearance 0
 defaults write com.google.Chrome NSRequiresAquaSystemAppearance 0
 defaults write com.postmanlabs.mac NSRequiresAquaSystemAppearance 0
