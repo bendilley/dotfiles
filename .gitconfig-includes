@@ -17,6 +17,8 @@
   autosetuprebase = always
 [push]
   default = upstream
+[fetch]
+  prune = true
 [core]
   autocrlf = false
   excludesfile = ~/.gitignore-global
