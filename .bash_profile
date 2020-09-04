@@ -31,6 +31,8 @@ export TERM="xterm-color"
 export MAVEN_OPTS="-Xmx512m"
 export ANT_OPTS="$MAVEN_OPTS"
 export LIQUIBASE_HOME="/usr/local/Cellar/liquibase/3.4.1/libexec"
+
+export EDITOR="subl --wait"
 export GEM_EDITOR="subl"
 
 export BASH_SILENCE_DEPRECATION_WARNING=1
