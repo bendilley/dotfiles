@@ -24,6 +24,7 @@ git config --global include.path ~/.gitconfig-includes
 cd ~/bin
 ln -s ../workspace/dotfiles/bin/flac2mp3
 ln -s ../workspace/dotfiles/bin/flac2mp3-rips-conversions
+ln -s ../workspace/dotfiles/bin/kill-matching
 ln -s ../workspace/dotfiles/bin/repomd-fix
 
 cd ~/Library
