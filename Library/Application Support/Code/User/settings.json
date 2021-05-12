@@ -1,6 +1,6 @@
 {
     "diffEditor.ignoreTrimWhitespace": false,
-    "workbench.colorTheme": "Twilight",
+    "workbench.colorTheme": "Panda Syntax",
     "editor.fontFamily": "Monaco",
     "editor.tabSize": 2,
     "editor.rulers": [
@@ -17,7 +17,7 @@
         "statusBar.debuggingBackground": "#511f1f"
     },
     "workbench.statusBar.feedback.visible": false,
-    "gitlens.keymap": "alternate",
+    "gitlens.keymap": "chorded",
     "ruby.interpreter.commandPath": "/Users/ben/.rbenv/shims/ruby",
     "solargraph.commandPath": "/Users/ben/.rbenv/shims/solargraph",
     "extensions.autoUpdate": false,
@@ -25,5 +25,20 @@
     "ruby.lint": {
         "ruby": true,
         "rubocop": true
+    },
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "editor.renderWhitespace": "boundary",
+    "editor.fontSize": 12,
+    "editor.useTabStops": true,
+    "editor.wordWrap": "off",
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.associations": {
+        "*.csvbuilder": "ruby"
     }
 }
