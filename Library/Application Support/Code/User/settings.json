@@ -20,7 +20,7 @@
     "gitlens.keymap": "chorded",
     "ruby.interpreter.commandPath": "/Users/ben/.rbenv/shims/ruby",
     "solargraph.commandPath": "/Users/ben/.rbenv/shims/solargraph",
-    "extensions.autoUpdate": false,
+    "extensions.autoUpdate": "onlyEnabledExtensions",
     "editor.find.seedSearchStringFromSelection": false,
     "ruby.lint": {
         "ruby": true,
@@ -40,5 +40,10 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "files.associations": {
         "*.csvbuilder": "ruby"
-    }
+    },
+    "files.exclude": {
+        "*.sublime-workspace": true
+    },
+    "terminal.integrated.tabs.enabled": true,
+    "window.newWindowDimensions": "inherit"
 }
