@@ -104,4 +104,4 @@ if [ -d "$HOME/adb-fastboot/platform-tools" ] ; then
 fi
 
 function sshi() { ssh -G $1 | grep localforward; ssh $1; }
-function deploy() { git reset --hard $1 && git push && bin/cap `git rev-parse --abbrev-ref HEAD` deploy; }
+function deploy() { git merge --ff-only $1 && git push && bin/cap `git rev-parse --abbrev-ref HEAD` deploy; }
