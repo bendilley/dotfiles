@@ -3,6 +3,7 @@
   cp = cherry-pick -x
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
   pp = pull --prune
+  ff = merge --ff-only
   fp = fetch --prune
   lt = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen(written %ar by %C(bold blue)%an%Cgreen, committed %ci by %C(bold blue)%cn%Cgreen)%Creset'
   lg = log --graph --pretty=format:'%Cred%h%Creset %C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)%an%Creset'
