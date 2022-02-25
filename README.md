@@ -3,7 +3,12 @@ Install [homebrew](https://brew.sh/) and
 brew install bash-completion
 ```
 
-My `.zshrc` assumed that `kubectl` is available. Install [Docker Desktop](https://www.docker.com/products/docker-desktop) for this (which includes `kubectl` for Kubernetes).
+I'm using zsh for `kubectl` completion (which is pretty essential for working with k8s).
+* Install omyzsh with curl:
+  ```bash
+  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  ```
+* Install [Docker Desktop](https://www.docker.com/products/docker-desktop) for this (which includes `kubectl` for Kubernetes).
 
 ```bash
 cd ~
@@ -13,6 +18,7 @@ ln -s workspace/dotfiles/.bash_aliases
 # and put any system-specific settings in ~/.profile
 
 # zsh is the only shell to support kubectl completion atm
+# You'll have to move the .zshrc out of the way which omyzsh installed
 ln -s workspace/dotfiles/.zshrc
 
 ln -s workspace/dotfiles/.vim
