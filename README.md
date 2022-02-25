@@ -1,6 +1,6 @@
 Install [homebrew](https://brew.sh/) and
 ```bash
-brew install bash-completion
+brew install bash-completion pwgen
 ```
 
 I'm using zsh for `kubectl` completion (which is pretty essential for working with k8s).
