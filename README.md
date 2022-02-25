@@ -3,12 +3,17 @@ Install [homebrew](https://brew.sh/) and
 brew install bash-completion
 ```
 
+My `.zshrc` assumed that `kubectl` is available. Install [Docker Desktop](https://www.docker.com/products/docker-desktop) for this (which includes `kubectl` for Kubernetes).
+
 ```bash
 cd ~
 ln -s workspace/dotfiles/.bashrc
 ln -s workspace/dotfiles/.bash_profile
 ln -s workspace/dotfiles/.bash_aliases
 # and put any system-specific settings in ~/.profile
+
+# zsh is the only shell to support kubectl completion atm
+ln -s workspace/dotfiles/.zshrc
 
 ln -s workspace/dotfiles/.vim
 ln -s workspace/dotfiles/.vimrc
