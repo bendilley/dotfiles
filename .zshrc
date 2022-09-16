@@ -102,3 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 bindkey  "\033OH"   beginning-of-line
 bindkey  "\033OF"   end-of-line
+
+export KUBE_PS1_NS_ENABLE=false
+source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+PS1='$(kube_ps1)'$PS1
