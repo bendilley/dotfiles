@@ -107,5 +107,5 @@ function sshi() { ssh -G $1 | grep localforward; ssh $1; }
 
 function deploy() {
     export BUNDLE_SUPPRESS_INSTALL_USING_MESSAGES=true
-    git merge --ff-only $1 && git push && bundle install && bin/cap `git rev-parse --abbrev-ref HEAD` deploy
+    git merge --ff-only $1 && git push && bundle install && SOURCE_BRANCH=$1 bin/cap `git rev-parse --abbrev-ref HEAD` deploy
 }
