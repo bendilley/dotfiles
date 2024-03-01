@@ -110,6 +110,9 @@ PS1='$(kube_ps1)'$PS1
 # rbenv: enable shims and autocompletion
 eval "$(rbenv init -)"
 
+# Enable YJIT for Ruby
+export RUBY_YJIT_ENABLE=1
+
 export PATH=$HOME/bin:$PATH
 source $HOME/.bash_aliases
 export GPG_TTY=$(tty)
@@ -122,3 +125,6 @@ function deploy() {
 }
 
 setopt no_share_history
+
+export CATALINA_HOME="$(brew --prefix)/opt/tomcat@8/libexec"
+export CATALINA_BASE="$HOME/var/tomcat"
