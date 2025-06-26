@@ -12,6 +12,7 @@
   squash = rebase -i
   oldest-ancestor = !bash -c 'diff -u <(git rev-list --first-parent "${1:-master}") <(git rev-list --first-parent "${2:-HEAD}") | sed -ne "s/^ //p" | head -1' -
   force-push = push --force-with-lease
+  downtime-required = "log --grep 'Downtime-required:\\s*y[es]*'"
 [color]
   ui = true
 [branch]
