@@ -70,7 +70,7 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker git kubectl)
+plugins=(docker git kubectl kube-ps1)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -104,8 +104,7 @@ bindkey  "\033OH"   beginning-of-line
 bindkey  "\033OF"   end-of-line
 
 export KUBE_PS1_NS_ENABLE=false
-source "$(brew --prefix)/opt/kube-ps1/share/kube-ps1.sh"
-PS1='$(kube_ps1)'$PS1
+PROMPT='$(kube_ps1)'$PROMPT
 
 # rbenv: enable shims and autocompletion
 eval "$(rbenv init -)"
